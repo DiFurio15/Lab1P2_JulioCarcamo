@@ -40,19 +40,20 @@ public class Lab1P2_JulioCarcamo {
         System.out.println("La mediana de medianas es: " + medianaDeMedianas);
     }
 
-    private static int[][] generarMatriz(int tamano) {
+    public static int[][] generarMatriz(int tamano) {
         int[][] matriz = new int[tamano][tamano];
         Random randy = new Random();
-        for (int i = 0; i < tamano; i++) {
-            for (int j = 0; j < tamano; j++) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
                 matriz[i][j] = randy.nextInt(10); // Números entre 0 y 9
             }
             System.out.println();
         }
+        
         return matriz;
     }
 
-    private static void bubbleSort(int[] arreglo) {
+    public static void bubbleSort(int[] arreglo) {
         int n = arreglo.length;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
@@ -65,7 +66,7 @@ public class Lab1P2_JulioCarcamo {
         }
     }
 
-    private static int calcularMediana(int[] arreglo) {
+    public static int calcularMediana(int[] arreglo) {
         int mitad = arreglo.length / 2;
         if (arreglo.length % 2 == 1) {
             return arreglo[mitad];
