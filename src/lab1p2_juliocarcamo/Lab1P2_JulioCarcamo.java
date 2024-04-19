@@ -65,7 +65,7 @@ public class Lab1P2_JulioCarcamo {
             }
         }
     }
-
+    //clase final
     public static int calcularMediana(int[] arreglo) {
         int mitad = arreglo.length / 2;
         if (arreglo.length % 2 == 1) {
