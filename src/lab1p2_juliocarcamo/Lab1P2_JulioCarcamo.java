@@ -17,13 +17,11 @@ public class Lab1P2_JulioCarcamo {
             System.out.println("El tamano debe ser un numero impar mayor que 4.");
             return;
         }
-
-        // Generar la matriz con numeros aleatorios
         int[][] matriz = generarMatriz(tamano);
 
-        // Ordenar cada fila de la matriz
         for (int i = 0; i < matriz.length; i++) {
             bubbleSort(matriz[i]);
+           
         }
 
         // Calcular las medianas de cada fila y almacenarlas en una matriz
@@ -31,8 +29,6 @@ public class Lab1P2_JulioCarcamo {
         for (int i = 0; i < matriz.length; i++) {
             medianas[i] = calcularMediana(matriz[i]);
         }
-
-        // Ordenar las medianas
         bubbleSort(medianas);
 
         // Calcular la mediana de medianas
