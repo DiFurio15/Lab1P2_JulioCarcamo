@@ -70,4 +70,5 @@ public class Lab1P2_JulioCarcamo {
             return (arreglo[mitad - 1] + arreglo[mitad]) / 2;
         }
     }
+    //Fin de Lab
 }
