@@ -22,7 +22,7 @@ public class Lab1P2_JulioCarcamo {
         }
 
         // Generar la matriz con numeros aleatorios
-        int[][] matriz = generarMatriz(tamano);
+         int [][] matriz = generarMatriz(tamano);
 
         // Ordenar cada fila de la matriz
         for (int i = 0; i < matriz.length; i++) {
